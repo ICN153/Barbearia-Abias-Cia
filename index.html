@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Barbearia Abias LTDA</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      
+      <section class="apresentacao"> 
+        <img 
+          src="img/WhatsApp Image 2025-04-28 at 16,40,09-photoaidcom-cropped.png" 
+          alt="Imagem de perfil da Barbearia Abias" 
+          class="perfil"
+        />
+        <h1 class="title">Barbearia Abias & CIA</h1>
+      </section> 
+
+      <form class="botoes__acesso" id="login-form">
+        <label for="email">E-mail:</label>
+        <div class="input-icon">
+          <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" aria-label="Digite seu e-mail"required/>
+        </div>
+
+        <label for="senha">Senha:</label>
+        <div class="input-icon-look" id="destravar">
+          <input type="password" id="senha" name="senha" placeholder="**********" aria-label="Digite sua senha"required/>
+        </div>
+      </form>
+      
+      <section class="conta__registra">
+        <p>Não tem conta? <span id="nova-senha" tabindex="0">Cadastre-se</span></p>
+        <p class="recuperar">Esqueceu a senha?</p>
+      </section>
+    </div>
+
+   <a href="acessar.html"> 
+    <button class="entrar" id="btn-entrar" type="submit">acessar</button>
+   </a> 
+  </header>
+
+  <script src="js/index.js"></script>
+</body>   
+</html>
