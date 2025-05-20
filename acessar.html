@@ -7,7 +7,32 @@
   <link rel="stylesheet" href="css/acessar.css"/>
   <title>Barbearia Abias LTDA</title>
 </head>
-<body>
+<body>  
+
+ <div class="modal" id="modal-agendar">
+  <div class="modal-content">
+    <div class="servico">
+      <span>Corte Masculino</span>
+      <button class="btn-agendar">Agendar</button>
+    </div>
+    <div class="servico">
+      <span>Limpeza de Rosto</span>
+      <button class="btn-agendar">Agendar</button>
+    </div>
+    <div class="servico">
+      <span>Sobrancelha</span>
+      <button class="btn-agendar">Agendar</button>
+    </div>
+    <div class="servico">
+      <span>Barba</span>
+      <button class="btn-agendar">Agendar</button>
+    </div>
+    <button class="btn-fechar" id="fechar-modal">Fechar</button>
+  </div>
+</div>
+
+
+
   <header class="header">
     <div class="container">
       
@@ -19,24 +44,21 @@
         />
         <h1 class="title">Escolha Seu Serviço</h1>
       </section> 
+<!-- Botões -->
+<form class="botoes__acesso" id="login-form">
+  <button type="button" class="servico-btn" data-servico="Corte Tradicional">Corte Tradicional</button>
+  <button type="button" class="servico-btn" data-servico="Limpeza de Rosto">Limpeza de Rosto</button>
+  <button type="button" class="servico-btn" data-servico="Sobrancelha">Sobrancelha</button>
+</form>
 
-      <form class="botoes__acesso" id="login-form">
-        <!-- <label for="email">E-mail:</label> -->
-        <div class="input-icon-look">
-          <input type="email" id="email" name="email" placeholder="Corte Tradicional" aria-label="Digite seu e-mail"required/>
-        </div>
+<!-- Detalhes do serviço -->
+<div id="detalhes-servico" class="detalhes-servico">
+  <h3 id="titulo-servico"></h3>
+  <p id="descricao-servico"></p>
+  <button id="voltar-btn" class="voltar-btn">Voltar</button>
+</div>
 
-        <!-- <label for="senha">Senha:</label> -->
-        <div class="input-icon-look" id="destravar">
-          <input type="password" id="senha" name="senha" placeholder="Limpeza de Rosto" aria-label="Digite sua senha"required/>
-        </div>
-
-        <div class="input-icon-look" id="destravar">
-            <input type="password" id="senha" name="senha" placeholder="Sobrancelha" aria-label="Digite sua senha"required/>
-          </div>
-          
-      </form>
-      
+     
       <footer class="rodape">
         <div class="container">
             <div class="img__servicos">
@@ -51,6 +73,8 @@
         </div>
       </footer>
   </header>
+
+ 
 
   <script src="js/index.js"></script>
 </body>   
