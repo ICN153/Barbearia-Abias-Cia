@@ -83,6 +83,7 @@ body {
 
 // Botões de acesso
 .botoes__acesso {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -169,6 +170,7 @@ body {
 
 // Botão Entrar
 .entrar {
+  max-width: 100%;
   margin-top: 5px;
   background-color: #000000;
   padding: 12px 119px;
@@ -234,16 +236,7 @@ body {
 }
 
 
-@media (max-width: 800px) {
-  .header{
-    max-width: 100%;  /* Largura cheia para telas pequenas */
-    height: auto;
-
-  }
-}
-
-
-@media (max-width: 375px) {
+@media (max-width: 437px) {
   body {
     padding: 0 10px;
   }
@@ -284,12 +277,48 @@ body {
     margin-top: 10px;
   }
 
-  .entrar {
+  .link__acessar {
     padding: 12px;
     font-size: 16px;  /* Fonte ajustada para telas pequenas */
   }
 
   .container {
     padding: 0 15px;  /* Menos margem para ajustar ao tamanho da tela */
+  }
+
+  .link__acessar{
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 438px){
+  .link__acessar{
+    width: 100%;
+    
+    .entrar{
+      
+  margin-top: 5px;
+  background-color: #000000;
+  padding: 12px 119px;
+  cursor: pointer;
+  color: var(--cor-label);
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+
+   &:hover {
+    background-color: #ffffff;
+    color: var(--cor-input);
+  }
+    }
+
+
+  }
+}
+
+@media(max-width: 438px){
+  .botoes__acesso{
+    max-width: 100%;
+    
   }
 }
